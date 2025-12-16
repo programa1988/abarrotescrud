@@ -1,0 +1,105 @@
+*{
+    color: white;
+}
+nav{
+    height: auto;
+    font-family: Arial;
+    font-size: 30px;
+    background-color: rgba(255, 0, 0, 0.4);
+    justify-content: center;
+    padding: 30px;
+    gap: 5px;
+} 
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+.a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    background-color: rgba(46, 48, 110, 0.8);
+    border-radius: 20px;
+}
+body{
+    background-image: url("../Multimedia/farmácia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+h1{
+    background-color: rgba(190, 76, 76, 0.8);
+    width: 50%;
+    height: 6%;
+}
+th{
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #ffffff; /* Borde de 1 píxel de color negro */
+  padding: 10px; /* Relleno de 10 píxels */
+}
+td{
+    font-weight: 300;
+    font-size: 20px;
+    border: 1px solid #ffffff; /* Borde de 1 píxel de color negro */
+  padding: 10px; /* Relleno de 10 píxels */
+}
+table{
+    background-color: rgba(129, 4, 4, 0.8);
+    width: 50%;
+    height: 80%;
+    background-color: rgba(50, 47, 30, 0.9); 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px;
+    border: 1px solid #fffbfb; /* Borde de 1 píxel de color gris oscuro */
+    border-radius: 5px; /* Radio de esquina de 5 píxels */
+    border-collapse: collapse; /* Une las celdas para eliminar espacios */
+}
+.tablo{
+    background-color: rgba(129, 4, 4, 0.8);
+    width: 70%;
+    height: 80%;
+    background-color: rgba(50, 47, 30, 0.9); 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px;
+    border: 1px solid #fffbfb; /* Borde de 1 píxel de color gris oscuro */
+    border-radius: 5px; /* Radio de esquina de 5 píxels */
+    border-collapse: collapse; /* Une las celdas para eliminar espacios */
+}
+.but{
+    background-color: #4CAF50; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 10px; /* Relleno */
+    border-radius: 5px; /* Radio de esquina */
+    cursor: pointer; 
+    height: auto;
+}
+.bot{
+    background-color: #af4c4c; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 10px; /* Relleno */
+    border-radius: 5px; /* Radio de esquina */
+    cursor: pointer; 
+    height: auto;
+}
+.eli{
+    background-color: #af4c4c; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 10px;
+}
+.mod{
+    background-color: #4CAF50; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 10px;
+}
+.mid{
+    background-color: #a0af4c; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 10px;
+}

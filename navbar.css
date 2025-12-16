@@ -1,0 +1,105 @@
+/* ===== COLORES PRINCIPALES ===== */
+:root {
+    --color-verde: #4CAF50;
+    --color-verde-claro: #8BC34A;
+    --color-rojo: #F44336;
+    --color-anaranjado: #FF9800;
+    --color-azul: #2196F3;
+    --color-azul-oscuro: #1565C0;
+    --color-blanco: #FFFFFF;
+    --color-gris-oscuro: #2C3E50;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/farmacia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-azul-oscuro) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+a, button {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-color: rgba(76, 175, 80, 0.8);
+}
+
+a:hover, button:hover {
+    background-color: var(--color-anaranjado);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+}
+
+a:active, button:active {
+    transform: translateY(0);
+}
+
+h1 {
+    color: var(--color-blanco);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(76, 175, 80, 0.6);
+    border-radius: 8px;
+}
+
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.e {
+    color: var(--color-blanco);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(33, 150, 243, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-blanco);
+    padding: 8px 15px;
+    background-color: rgba(33, 150, 243, 0.8);
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.a:hover {
+    background-color: var(--color-anaranjado);
+    border-color: var(--color-blanco);
+    transform: scale(1.05);
+}

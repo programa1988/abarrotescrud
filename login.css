@@ -1,0 +1,116 @@
+/* ===== COLORES PRINCIPALES ===== */
+:root {
+    --color-verde: #4CAF50;
+    --color-verde-claro: #8BC34A;
+    --color-rojo: #F44336;
+    --color-anaranjado: #FF9800;
+    --color-azul: #2196F3;
+    --color-azul-oscuro: #1565C0;
+    --color-blanco: #FFFFFF;
+    --color-gris-oscuro: #2C3E50;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/farmacia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--color-blanco);
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+.sesion {
+    width: 45%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(33, 33, 33, 0.9) 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+label {
+    color: var(--color-blanco);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(188, 182, 218, 0.6);
+    font-weight: bold;
+    color: var(--color-blanco);
+    border: 2px solid var(--color-azul);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgba(188, 182, 218, 0.8);
+    border-color: var(--color-verde);
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.but {
+    width: 60%;
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-azul) 100%);
+    font-weight: bold;
+    color: var(--color-blanco);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.but:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.but:active {
+    transform: translateY(0);
+}

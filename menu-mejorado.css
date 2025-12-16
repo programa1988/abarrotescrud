@@ -1,0 +1,193 @@
+/* ===== COLORES PRINCIPALES ===== */
+:root {
+    --color-verde: #4CAF50;
+    --color-rojo: #F44336;
+    --color-anaranjado: #FF9800;
+    --color-azul: #2196F3;
+    --color-azul-oscuro: #1565C0;
+    --color-blanco: #FFFFFF;
+    --color-gris-oscuro: #2C3E50;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/farmacia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-azul-oscuro) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-color: rgba(76, 175, 80, 0.8);
+    display: inline-block;
+}
+
+a:hover {
+    background-color: var(--color-anaranjado);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+}
+
+a:active {
+    transform: translateY(0);
+}
+
+h1 {
+    color: var(--color-blanco);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(76, 175, 80, 0.6);
+    border-radius: 8px;
+}
+
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: var(--color-blanco);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(33, 150, 243, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: auto;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 33.3333%;
+    transition: 0.6s;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn {
+    border: 3px solid var(--color-blanco);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(33, 150, 243, 0.6);
+    font-weight: bold;
+}
+
+.manual-btn:hover {
+    background-color: var(--color-anaranjado);
+    border-color: var(--color-verde);
+    transform: scale(1.1);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -33.3333%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -66.6666%;
+}
+
+/* ===== ESTILO DEL CONTENEDOR DEL MENÚ (CUADRO REDONDEADO) ===== */
+.menu {
+    max-width: 900px;           /* ancho máximo del cuadro del menú */
+    margin: 30px auto;         /* centrado horizontal y separación vertical */
+    padding: 18px 24px;        /* espacio interno */
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    border-radius: 14px;       /* bordes redondeados */
+    border: 1px solid rgba(255,255,255,0.08); /* borde sutil */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);   /* sombra para levantar el cuadro */
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: rgba(33,150,243,0.85); /* azul por defecto */
+    color: var(--color-blanco);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.menu a:hover {
+    background-color: var(--color-anaranjado);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.menu a:active {
+    transform: translateY(0);
+}
+
+.menu .primary {
+    background: linear-gradient(90deg, var(--color-verde), var(--color-azul));
+}
+
